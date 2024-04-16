@@ -34,7 +34,7 @@ const navLinks = [
 
 export function Header() {
   return (
-    <header className="grid h-[4.25rem] bg-[#000212] px-4 desktop:place-content-center">
+    <header className="grid h-[4.25rem] px-4 desktop:place-content-center">
       <div className="flex items-center justify-between desktop:m-auto">
         <Link
           href="/"
