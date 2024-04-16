@@ -28,3 +28,17 @@
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
 }
+
+@layer utilities {
+  .gradient-text {
+    background: linear-gradient(
+      179.96deg,
+      #fff 67.7%,
+      rgba(255, 255, 255, 0) 124.95%,
+      rgba(255, 255, 255, 0) 124.95%,
+      #000212 124.95%
+    );
+    background-clip: text;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  }
+}
