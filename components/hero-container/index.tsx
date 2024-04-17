@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { Button } from '../ui/button';
 
 export function HeroContainer() {
   return (
@@ -27,6 +28,10 @@ export function HeroContainer() {
           signs at scale. Update and schedule content, monitor screen health,
           and show content from your existing tech stack.
         </p>
+        <div className="flex gap-6">
+          <Button>Start Free Trial</Button>
+          <Button variant="secondary">Get Demo</Button>
+        </div>
       </div>
       <div className="after:round-top after:bottom-[-59%] after:min-[992px]:bottom-[-49%] after:desktop:bottom-[-39%]">
         <Image

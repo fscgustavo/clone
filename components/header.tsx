@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { Button } from './ui/button';
 
 const navLinks = [
   {
@@ -59,13 +60,13 @@ export function Header() {
             ))}
           </ul>
         </nav>
-        <div className="ml-[76px] hidden gap-6 desktop:flex">
+        <div className="ml-[76px] hidden items-center gap-6 desktop:flex">
           <Link href="#" className="px-2 font-normal text-white">
             Sign In
           </Link>
-          <Link href="#" className="px-2 font-normal text-white">
-            Free Trial
-          </Link>
+          <Button variant="secondary" size="sm" asChild>
+            <Link href="#">Free Trial</Link>
+          </Button>
         </div>
       </div>
     </header>

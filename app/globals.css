@@ -60,4 +60,30 @@
     background: #000212;
     height: 85%;
   }
+
+  .bg-primary {
+    background: linear-gradient(100.94deg, #972eff 34.18%, #3153fc 88.69%);
+  }
+
+  .bg-secondary {
+    position: relative;
+  }
+
+  .bg-secondary:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 99px;
+    border: 1px solid transparent;
+    background: linear-gradient(277.33deg, #454ad1 -2.48%, #7e2bd0 93.62%)
+      center center/105%;
+    mask:
+      linear-gradient(#fff 0 0) padding-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+  }
 }
