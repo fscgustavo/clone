@@ -30,7 +30,8 @@ export function CustomersSection() {
       </div>
       <div className="my-20">
         <p className="leading- mb-14 text-[1.6875rem] font-medium leading-normal">
-          More than 10,000+ active screens for brands like...
+          More than <span className="text-highlight">10,000+</span> active
+          screens for brands like...
         </p>
         <InfiniteMovingCards images={firstImagesHalf} direction="left" />
         <InfiniteMovingCards images={secondImagesHalf} direction="right" />

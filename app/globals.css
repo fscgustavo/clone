@@ -41,4 +41,23 @@
     background-clip: text;
     -webkit-text-fill-color: rgba(0, 0, 0, 0);
   }
+
+  .text-highlight {
+    background: linear-gradient(146deg, #972eff 0%, #3153fc 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .round-top {
+    border-top-left-radius: 25% 75%;
+    border-top-right-radius: 25% 75%;
+    border-top: 1px solid rgba(120, 119, 198, 0.4);
+    position: absolute;
+    z-index: -1;
+    width: 150%;
+    left: -25%;
+    background: #000212;
+    height: 85%;
+  }
 }
