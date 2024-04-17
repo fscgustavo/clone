@@ -1,5 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { InfiniteMovingCards } from '../ui/infinite-moving-cards';
+import { infiniteMovingImages } from '@/constants/infinite-moving-images';
+
+const half = Math.ceil(infiniteMovingImages.length / 2);
+
+const firstImagesHalf = infiniteMovingImages.slice(0, half);
+const secondImagesHalf = infiniteMovingImages.slice(half);
 
 export function CustomersSection() {
   return (
@@ -25,7 +32,8 @@ export function CustomersSection() {
         <p className="leading- mb-14 text-[1.6875rem] font-medium leading-normal">
           More than 10,000+ active screens for brands like...
         </p>
-        <div className="h-[200px] w-full bg-red-50" />
+        <InfiniteMovingCards images={firstImagesHalf} direction="left" />
+        <InfiniteMovingCards images={secondImagesHalf} direction="right" />
       </div>
     </section>
   );
